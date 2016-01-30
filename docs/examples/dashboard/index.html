@@ -42,14 +42,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">DocToc</a>
+          <a class="navbar-brand" href="#">MedToc</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Dashboard<span class="sr-only">(current)</span></a></li>
             <li><a href="./MedicalRecord.html">Medical Reports</a></li>
             <li><a href="./patientInfo.html">Patient Information</a></li>
-            <li><a href="#">Export</a></li>
+            <li><a href="nurse-patient.jpg" download>Export</a></li>
           </ul>
           <form class="navbar-form navbar-right">
             <input type="text" class="form-control" placeholder="Search...">
@@ -64,20 +64,23 @@
         <div class="main">
           <h1 class="page-header">Dashboard</h1>
 
-          <div class="row placeholders">
+          <div class="row placeholders" id="heading-row">
             <div class="col-xs-9 col-sm-7 ">
               <img src="nurse-patient.png" width="900" height="600" class="img-responsive" >
-              
             </div>
             
-            <div class="col-xs-8 col-sm-5 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+            <div class="col-xs-9 col-sm-7 " id="form-section">
+              <span class="text-muted">Triage</span>
+             <textarea class="patient-form" rows="10"></textarea>
+              <div class="btm-button">
+                <p><a class="btn btn-info btn-sm" href="#" role="button">Minor</a></p>
+                <p><a class="btn btn-warning btn-sm" href="#" role="button">Walk-in Recommeded</a></p>
+                <p><a class="btn btn-danger btn-sm" href="#" role="button">ER Visit Recommended</a></p>
+              </div>
             </div>
           </div>
 
-          <h2 class="sub-header">Patient Info</h2>
+           <h2 class="sub-header">Patient Info</h2>
            <div class="row">
               <div class="col-md-6"><b>Name:</b> Monica Latte</div>
               <div class="col-md-6"><b>Home Phone:</b> 444-444-4444</div>
@@ -91,8 +94,8 @@
               <div class="col-md-6"><b>Emp. Status:</b> Full-time</div>
               <div class="col-md-6"><b>External ID:</b> MR-111-1111</div>
               <div class="col-md-6"><b>Soc Sec No:</b> 444-444-4444</div>
-            </div>
-        </div>
+            </div> 
+          </div>
       </div>
     </div>
 
